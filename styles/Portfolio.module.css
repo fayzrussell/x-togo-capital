@@ -1,0 +1,26 @@
+.portfolio {
+    background-color: var(--background);
+    min-height: 400px;
+}
+
+.sectionTitle {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--secondary);
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+}
+
+.placeholder {
+    color: var(--secondary);
+    font-size: 1.1rem;
+}

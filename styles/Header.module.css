@@ -1,0 +1,67 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+.nav a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--secondary);
+    transition: color 0.2sease;
+}
+
+.nav a:hover {
+    color: var(--primary);
+}
+
+.cta {
+    color: var(--primary) !important;
+    font-weight: 600;
+}
+
+.controls {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.controlBtn {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    color: var(--primary);
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.controlBtn:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        /* Mobile menu implementation later if needed or simple stack */
+    }
+}

@@ -1,0 +1,62 @@
+.thesis {
+    background-color: var(--background);
+}
+
+.header {
+    margin-bottom: 60px;
+}
+
+.title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--secondary);
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 600px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.highlight {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.column li {
+    margin-bottom: 12px;
+    color: var(--secondary);
+    font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+}

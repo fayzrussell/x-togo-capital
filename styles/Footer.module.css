@@ -1,0 +1,57 @@
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 60px 0 30px;
+    background-color: var(--background);
+    color: var(--secondary);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+}
+
+.socials {
+    display: flex;
+    gap: 24px;
+}
+
+.socials a {
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.socials a:hover {
+    color: var(--primary);
+}
+
+.bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 30px;
+    font-size: 0.85rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
