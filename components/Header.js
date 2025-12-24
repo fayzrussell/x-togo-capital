@@ -18,10 +18,10 @@ export default function Header() {
                     {/* Actually, prompt said: "Light & Dark theme with toggle", "Automatically switch logos based on theme" */}
                     {/* Images: logo-light.jpg (Black text), logo-dark.jpg (White text) */}
                     <Image
-                        src={theme === 'dark' ? '/assets/logo-dark.jpg' : '/assets/logo-light.jpg'}
+                        src={theme === 'dark' ? '/assets/logo-vector-light.svg' : '/assets/logo-vector-dark.svg'}
                         alt="X-Togo Capital"
-                        width={280}
-                        height={84}
+                        width={220}
+                        height={74}
                         style={{ objectFit: 'contain' }}
                         priority
                     />
