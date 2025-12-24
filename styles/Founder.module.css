@@ -1,13 +1,13 @@
 .founder {
-    background-color: var(--accent);
-    /* Slight background difference if needed, or keeping it clean */
-    background: linear-gradient(to bottom, var(--background), var(--accent) 50%, var(--background));
+    background-color: var(--background);
+    /* Removed the distracting gradient */
+    padding: 80px 0;
 }
 
 .content {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 80px;
 }
 
 .imageWrapper {
@@ -35,20 +35,23 @@
 }
 
 .name {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 800;
     margin-bottom: 4px;
+    letter-spacing: -0.02em;
 }
 
 .role {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--secondary);
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .bio {
     font-size: 1.1rem;
     line-height: 1.7;
+    color: var(--foreground);
+    opacity: 0.9;
 }
 
 @media (max-width: 768px) {
@@ -57,24 +60,41 @@
         text-align: center;
         gap: 30px;
     }
+
+    .name {
+        font-size: 2.5rem;
+    }
 }
 
 .socials {
-    margin-top: 24px;
+    margin-top: 32px;
     display: flex;
-    gap: 20px;
+    gap: 16px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .socials {
+        justify-content: center;
+    }
 }
 
 .socials a {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--primary);
-    opacity: 0.7;
-    transition: opacity 0.2s;
-    border-bottom: 1px solid transparent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--foreground);
+    padding: 10px 20px;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    transition: all 0.2s ease;
+    text-decoration: none;
 }
 
 .socials a:hover {
-    opacity: 1;
-    border-bottom: 1px solid var(--primary);
+    background-color: var(--foreground);
+    color: var(--background);
+    border-color: var(--foreground);
+    transform: translateY(-2px);
 }
