@@ -20,8 +20,8 @@ export default function Header() {
                     <Image
                         src={theme === 'dark' ? '/assets/logo-dark.jpg' : '/assets/logo-light.jpg'}
                         alt="X-Togo Capital"
-                        width={200}
-                        height={60}
+                        width={280}
+                        height={84}
                         style={{ objectFit: 'contain' }}
                         priority
                     />
