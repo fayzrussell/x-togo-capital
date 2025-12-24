@@ -25,6 +25,12 @@ export default function Founder() {
                         <h3 className={styles.name}>{t.founder.name}</h3>
                         <p className={styles.role}>{t.founder.role}</p>
                         <p className={styles.bio}>{t.founder.bio}</p>
+
+                        <div className={styles.socials}>
+                            <a href="https://www.instagram.com/rustam.togo" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            <a href="https://youtube.com/@rustam_togo" target="_blank" rel="noopener noreferrer">YouTube</a>
+                            <a href="https://www.tiktok.com/@rustam_togo" target="_blank" rel="noopener noreferrer">TikTok</a>
+                        </div>
                     </div>
                 </div>
             </div>
